@@ -228,6 +228,10 @@
 .toolbar{
   width: 100%;
   overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 a{
   text-decoration: none;
@@ -251,3 +255,5 @@ a{
 .body{
   overflow: hidden;
 }
+
+
