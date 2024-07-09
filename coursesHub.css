@@ -66,15 +66,11 @@
 .icon-link {
     text-align: center;
     display: block;
-    /* Ensures the link takes up the full width */
     font-size: 1.25rem;
-    /* Adjust font size if needed */
     color: #000;
-    /* Adjust color if needed */
     text-decoration: none;
-    /* Remove underline */
     margin-top: 10px;
-    /* Add margin if needed */
+    
 }
 
 .card-image-top {
@@ -84,8 +80,8 @@
 .card-body {
     position: relative;
     width: 265.5px;
-    height: 400px; /* Adjust as needed */
-    overflow: hidden;
+    height: 400px; 
+    
   }
   
   .card-body img {
@@ -153,18 +149,34 @@
     text-align:center;
     padding:20px;
   }
+  /*.hero-section {
+    background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    
+    
+}*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
   .background-container {
     background-image: url('./dried-flowers-notebook.2jpg.jpg');
-    background-size:100%; /* This makes sure the image covers the entire container */
-    background-position: center; /* This centers the image in the container */
+    background-size:100%;
+    background-position: center; 
     padding-top: 100px;
-    width: 1349px;
-    height: 377px;; /* Full viewport height */
+    
+    height: 377px;; 
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+    align-items: center;
 }
 .background-text{
   font-weight: bold;
@@ -175,16 +187,23 @@
 }
 
 
-.hero-section {
-  background-image: url('./courseHubImage.jpg');
-  background-size:cover;
-  background-position: center;
-  height: 100vh;
-  color: rgb(248, 179, 51);
+/*.hero-section {
+  
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  text-align: center;
+  
+  position: relative;
+  
+}*/
+.hero-section{
+  background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   
 }
 .hero-content{
@@ -194,10 +213,7 @@
 .container-categories{
   font-family:cursive
 }
-#newspaper-container{
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+
 .footer{
   background-color:#363535;
 }
@@ -206,4 +222,33 @@
 }
 .toolbar{
   background-color: #363535;
+}
+.form-control{
+  width: 100%;
+}
+.toolbar{
+  width: 100%;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+}
+.tang {
+  background-color: white;
+  color: #5a5a5a;
+  font-weight: 800;
+  box-shadow: -3px 2px 6px -1px rgba(0, 0, 0, .14);
+  font-size: 14px;
+  text-align: center;
+  padding: 3px 0;
+  fill: #5a5a5a;
+}
+
+.tang:hover {
+  background-color: #5a5a5a;
+  color: white;
+  fill: white;
+}
+.body{
+  overflow: hidden;
 }
