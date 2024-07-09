@@ -158,12 +158,7 @@
     
     
 }*/
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
   .background-container {
     background-image: url('./dried-flowers-notebook.2jpg.jpg');
     background-size:100%;
@@ -204,11 +199,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  height: 100vh;
   
 }
 .hero-content{
   font-weight: bold;
   color: rgb(90, 88, 88);
+}
+.hero-title{
+  color: rgb(238, 177, 63)
 }
 .container-categories{
   font-family:cursive
