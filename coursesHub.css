@@ -1,6 +1,6 @@
 .navbar-brand img {
-    width: 100px;
-    height: 24px;
+    width: 124px;
+    height: 36.53px;
     margin-top: 0.2cm
 }
 
@@ -8,6 +8,7 @@
 .navbar-nav .nav-link {
     font-weight: 600;
     color: #000;
+    font-size: 14px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -193,21 +194,21 @@
   
 }*/
 .hero-section{
-  background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url('https://eduma.thimpress.com/wp-content/uploads/2022/08/banner-courses-hub.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  height:100vh;
   
 }
 .hero-content{
   font-weight: bold;
-  color: rgb(90, 88, 88);
+  color: rgb(255, 255, 255);
 }
 .hero-title{
-  color: rgb(238, 177, 63)
+  color: rgb(255, 255, 255)
 }
 .container-categories{
   font-family:cursive
@@ -219,19 +220,22 @@
 #navbar-nav{
   background-color:#363535;
 }
-.toolbar{
-  background-color: #363535;
-}
 .form-control{
   width: 100%;
 }
-.toolbar{
+/*.toolbar{
   width: 100%;
   overflow: hidden;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #222222;
+  color: #ababab;
+  }*/
+.toolbar{
+  list-style-type: none;
+ 
 }
 a{
   text-decoration: none;
@@ -256,4 +260,12 @@ a{
   overflow: hidden;
 }
 
-
+.icon-class{
+  margin: 0px 5px 0px 0px;
+}
+.reg-log{
+  justify-content: flex-end;
+}
+.navbar-nav{
+  justify-content: flex-end;
+}
