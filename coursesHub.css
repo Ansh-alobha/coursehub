@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .navbar-brand img {
     width: 124px;
     height: 36.53px;
@@ -80,8 +84,8 @@
 }
 .card-body {
     position: relative;
-    width: 265.5px;
-    height: 400px; 
+    width: 100%;
+    height: auto; 
     
   }
   
@@ -94,11 +98,11 @@
   .card-body ul,
   .card-body button {
     position: relative;
-    transition: transform 0.5s ease;
+    /*transition: transform 0.5s ease;*/
   }
   
   
-  .card-body:hover h1 {
+  /*.card-body:hover h1 {
     transform: translateY(30px);
   }
   
@@ -108,44 +112,52 @@
   
   .card-body:hover button {
     transform: translateY(30px);
-  }
+  }*/
   .grid-container {
-    display: grid;
+    display: flex;
+    /*display: grid;
     grid-template-columns:  auto auto auto;
     gap: 20px;
     justify-items: center;
-    align-items: center;
+    align-items: center;*/
   }
   .grid-item svg {
     max-width: 50px;
     
   }
-  .grid-item:hover {
+  /*.grid-item:hover {
     transform: translateY(-10px);
     
-  }
+  }*/
   .grid-item button {
     display: block;
     font-size: 16px;
     font-weight:bold;
   }
   .grid-item {
-    background-color: #ffffff;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /*background-color: #ffffff;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;*/
   }
   .top-categories {
     text-align: center;
     padding: 20px;
-    background-color:#f8f9fb
+    background-color:#f8f9fb;
+    margin-bottom: 80px;
+    padding: 40px 0px 40px 0px;
   }
   
-.top-categories h2 {
+/*.top-categories h2 {
     margin-bottom: 20px;
-  }
+  }*/
   .certificates{
     text-align:center;
     padding:20px;
@@ -200,7 +212,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height:100vh;
+  height: auto;
   
 }
 .hero-content{
@@ -268,4 +280,14 @@ a{
 }
 .navbar-nav{
   justify-content: flex-end;
+}
+
+.courses-searching form{
+  
+   
+    border-style: solid;
+    border-width: 2px 00px 2px 2px;
+    border-color: #FFFFFF;
+    border-radius: 4px 0px 0px 4px;
+
 }
