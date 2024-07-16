@@ -1,0 +1,59 @@
+@media (min-width: 768px) {
+    .search-form {
+      flex-direction: row;
+      justify-content: center;
+    }
+}
+@media only screen and (max-width:992px) {
+  .toolbar span{
+      display: none;
+  }
+
+}
+@media only screen and (max-width:992px) {
+  .toolbar svg{
+     text-align: left;
+  }
+
+}
+/* statatics*/
+@media (max-width: 768px) { /* Media query for devices with max width of 768px */
+  .background-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    height: auto; /* Ensure height adjusts based on content */
+  }
+
+  .background-text {
+    font-size: 1.5rem; /* Smaller font size for better readability on small screens */
+  }
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust minimum size as needed */
+  gap: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .category {
+      width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .category {
+      width: 100%;
+  }
+}
+
+/*dropdown menu*/
+@media (min-width: 576px) { 
+  .dropdown-menu.dropdown-large,
+  .dropdown-menu.dropdown-large.dropdown-course {
+    width: 80%; /* Adjust percentage as needed */
+    max-width: 800px; /* Ensures maximum width */
+    margin: auto; /* Centers the dropdown */
+  }
+}
