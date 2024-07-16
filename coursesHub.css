@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
 }
@@ -25,7 +25,7 @@
 }
 
 .dropdown-menu.dropdown-large {
-    width: 800px;
+    width: 100vh;
    
 }
 
@@ -50,10 +50,6 @@
     color: #ffb619;
 }
 
-.dropdown-menu.dropdown-large.dropdown-course {
-    width: 950px;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -62,9 +58,9 @@
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    list-style: none;
     padding: 20px;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -82,6 +78,7 @@
     width: 265.5;
     height: 196.88;
 }
+
 .card-body {
     position: relative;
     width: 100%;
@@ -102,58 +99,60 @@
   }
   
   
-  /*.card-body:hover h1 {
-    transform: translateY(30px);
+  .card-body:hover h1 {
+    color:#ffb619
   }
+  .card .zoom
+     {
+      transition: transform 1s; /* Animation */
+    }
+    
+    .zoom:hover {
+      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition: ease-in-out;
+    transition-duration: 1s;
+    }
   
-  .card-body:hover ul {
+  
+  /*.card-body:hover ul {
     transform: translateY(30px);
   }
   
   .card-body:hover button {
     transform: translateY(30px);
   }*/
-  .grid-container {
+  .cb{
     display: flex;
-    /*display: grid;
-    grid-template-columns:  auto auto auto;
-    gap: 20px;
-    justify-items: center;
-    align-items: center;*/
-  }
-  .grid-item svg {
-    max-width: 50px;
-    
-  }
-  /*.grid-item:hover {
-    transform: translateY(-10px);
-    
-  }*/
-  .grid-item button {
-    display: block;
-    font-size: 16px;
-    font-weight:bold;
-  }
-  .grid-item {
-    display: flex;
-    position: relative;
-    width: 100%;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-content: flex-start;
-    /*background-color: #ffffff;
-    border-radius: 5px;
+}
+  .categories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    margin-bottom: 20px;
     padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;*/
-  }
-  .top-categories {
-    text-align: center;
-    padding: 20px;
-    background-color:#f8f9fb;
-    margin-bottom: 80px;
-    padding: 40px 0px 40px 0px;
-  }
+    transition: transform 0.3s;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
   
 /*.top-categories h2 {
     margin-bottom: 20px;
@@ -173,12 +172,11 @@
 }*/
 
   .background-container {
-    background-image: url('./dried-flowers-notebook.2jpg.jpg');
-    background-size:100%;
+    background-image: url('https://eduma.thimpress.com/wp-content/uploads/2022/11/counterbox-new-2.jpg');
     background-position: center; 
     padding-top: 100px;
+    background-color: #000000;
     
-    height: 377px;; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,9 +220,7 @@
 .hero-title{
   color: rgb(255, 255, 255)
 }
-.container-categories{
-  font-family:cursive
-}
+
 
 .footer{
   background-color:#363535;
@@ -291,3 +287,15 @@ a{
     border-radius: 4px 0px 0px 4px;
 
 }
+
+
+.d-flex.reg-log {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+ .divider{
+  width: 2px;
+ }
