@@ -1,3 +1,10 @@
+
+.card-body{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 *{
   margin: 0;
   padding: 0;
@@ -20,9 +27,6 @@
 
 }
 
-.navbar-nav {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 .dropdown-menu.dropdown-large {
     width: 100vh;
@@ -176,13 +180,14 @@
     background-position: center; 
     padding-top: 100px;
     background-color: #000000;
-    
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
     align-items: center;
+    background-repeat: no-repeat;
 }
 .background-text{
   font-weight: bold;
@@ -299,3 +304,7 @@ a{
  .divider{
   width: 2px;
  }
+ .vl {
+  border-left: 6px solid rgb(227, 232, 227);
+  height: 500px;
+}
