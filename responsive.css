@@ -52,7 +52,7 @@
 @media (min-width: 576px) { 
   .dropdown-menu.dropdown-large,
   .dropdown-menu.dropdown-large.dropdown-course {
-    width: 80%; /* Adjust percentage as needed */
+   
     max-width: 800px; /* Ensures maximum width */
     margin: auto; /* Centers the dropdown */
   }
