@@ -57,3 +57,17 @@
     margin: auto; /* Centers the dropdown */
   }
 }
+
+@media (max-width: 768px) {
+  .item img {
+    width: 100%; /* Make images responsive */
+  }
+  .custom-nav button {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+}
+
+.owl-carousel img {
+  width: 100%;
+  height: auto;
+}
