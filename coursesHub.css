@@ -1,4 +1,11 @@
 
+
+.body {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .card-body{
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
@@ -98,8 +105,25 @@
     position: relative;
     /*transition: transform 0.5s ease;*/
   }
-  
-  
+  .feature-icon .zoom{
+    transition : transform 1s
+
+  }
+  .feature-icon:hover{
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition:ease-out;
+    transition-duration: 1s;
+  }
+  .feature::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    background-color: transparent;
+  }
   .card-body:hover h1 {
     color:#ffb619
   }
@@ -109,7 +133,7 @@
     }
     
     .zoom:hover {
-      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     transition: ease-in-out;
     transition-duration: 1s;
     }
@@ -213,7 +237,19 @@
   background-size: cover;
   position: relative;
   height: auto;
-  
+}
+.hero-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+}
+.hero-abc::placeholder{
+  color: white;
 }
 .hero-content{
   font-weight: bold;
