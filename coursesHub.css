@@ -413,6 +413,15 @@ body {
 }
 
 /*Pop out modal*/
+.modal{
+  
+    margin-left: 100px;
+    max-width: 85%;
+    padding-left: 0px;
+    scrollbar-color:unset;
+    scrollbar-width: auto;
+  
+}
 .tp_sidebar {
  
   grid-gap: 15px;
